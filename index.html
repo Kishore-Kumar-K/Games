@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <style>
+     @media only screen and (min-width: 450px) {
+ 
+  body {
+    background-color: lightblue;
+  
+  }
+  .play-button
+  {
+    width: 150px;
+    margin-top: 150px;
+    margin-left:350px;
+  }
+}
+     </style>
+    </head>
+  <body>
+    <p><button onclick="
+      let randomNumber=Math.random();
+      let computerMove='';
+       let result='';
+      if(randomNumber>0&&randomNumber<1/3)
+      {
+        computerMove='rock';
+      }
+      else if(randomNumber>1/3&&randomNumber<2/3)
+      {
+        computerMove='scissor';
+      }
+      if(randomNumber>2/3&&randomNumber<1)
+      {
+        computerMove='paper';
+      }
+
+      if(computerMove=='rock')
+      {
+        result='tie';
+        alert(`your move is rock.
+computer move is ${computerMove}.
+The result is ${result}`);
+      }
+      else if(computerMove=='scissor')
+      {
+        result='You Win';
+        alert(`your move is rock.
+computer move is ${computerMove}.
+The result is ${result}`);
+      }
+      if(computerMove=='paper')
+      {
+        result='You Loose';
+        alert(`your move is rock.
+computer move is ${computerMove}.
+The result is ${result}`);
+      }
+      " class="play-button">rock </button></p>
+          <p></p><button onclick="
+            randomNumber=Math.random();
+            if(randomNumber>0&&randomNumber<1/3)
+            {
+              computerMove='rock';
+            }
+            else if(randomNumber>1/3&&randomNumber<2/3)
+            {
+              computerMove='scissor';
+            }
+            if(randomNumber>2/3&&randomNumber<1)
+            {
+              computerMove='paper';
+            }
+            
+            if(computerMove=='rock')
+            {
+              result='You Win';
+        alert(`your move is Paper.
+computer move is ${computerMove}.
+The result is ${result}`);
+            }
+            else if(computerMove=='scissor')
+            {
+              result='You Loose';
+        alert(`your move is Paper.
+computer move is ${computerMove}.
+The result is ${result}`);
+            }
+           else if(computerMove=='paper')
+            {
+              result='Tie';
+        alert(`your move is Paper.
+computer move is ${computerMove}.
+The result is ${result}`);
+            }" class="play-button"
+          >paper </button></p>
+                              <p>  <button onclick="
+                                randomNumber=Math.random();
+                              if(randomNumber>0&&randomNumber<1/3)
+                              {
+                                computerMove='rock';
+                              }
+                              else if(randomNumber>1/3&&randomNumber<2/3)
+                              {
+                                computerMove='scissor';
+                              }
+                              if(randomNumber>2/3&&randomNumber<1)
+                              {
+                                computerMove='paper';
+                              }
+                              
+                              if(computerMove=='rock')
+                                  {
+                                    
+                                    result='You Loose';
+        alert(`your move is Scissor.
+computer move is ${computerMove}.
+The result is ${result}`);
+                                  }
+                                  else if(computerMove=='scissor')
+                                  {
+                                    result='Tie';
+        alert(`your move is Scissor.
+computer move is ${computerMove}.
+The result is ${result}`);
+                                  }
+                                  if(computerMove=='paper')
+                                  {
+                                    result='You win';
+        alert(`your move is Scissor.
+computer move is ${computerMove}.
+The result is ${result}`);
+                                  }
+                              " class="play-button">Scissor </button></p>
+<script>    
+
+</script>
+    </body>
+  </html>
